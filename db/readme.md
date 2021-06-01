@@ -1,0 +1,1 @@
+The files here contain no data. Just the structure. Store the records in the GoLive or Dropbox folder 
