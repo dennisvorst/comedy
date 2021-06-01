@@ -1,0 +1,11 @@
+# ignore the composer vendor folder 
+vendor/
+
+# ignore the logging files 
+src/logging/
+
+# ignore the css files that was downloaded from elsewhere
+src/css/
+
+# ignore the batch files 
+*.bat

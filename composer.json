@@ -1,0 +1,33 @@
+{
+    "name": "vorstd/museum",
+    "description": "The Dutch Base- and Softball museum.",
+    "license": "proprietary",
+  
+    "autoload": {
+        "classmap": ["src/"],
+    	"psr-0": { "\\": "src/class/" } 
+    },
+    "repositories": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/dennisvorst/mysqldatabase/"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/dennisvorst/mysqladministrator/"
+        }
+    ],
+
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "require": {
+        "robmorgan/phinx": "^0.10.6",
+        "composer/xdebug-handler": "^1.3",
+        "vorstd/database": "dev-master",
+        "vorstd/administrator": "dev-master"
+    },
+    "scripts": {
+        "test": "phpunit --colors=always --bootstrap ./vendor/autoload.php ./tests/Unit"
+    }
+}
